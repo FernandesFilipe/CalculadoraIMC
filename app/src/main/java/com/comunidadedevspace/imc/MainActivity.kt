@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         // Recuperar o botao da tela
         // Colocar açao no botao setOnClickListener
         // Recuperar o texto digitado no edt peso e edt altura
-
         val edtpeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtaltura = findViewById<TextInputEditText>(R.id.edt_altura)
 
@@ -43,6 +43,18 @@ class MainActivity : AppCompatActivity() {
                 val altura = alturaStr.toFloat()
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
+
+                //Navegar de uma tela para outra
+                //Criar um layout da proxima tela
+                //Passar dados (resultado) para proxima tela
+
+                //Intent - classe do proprio android
+
+                val intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra("Inter", resultado)
+                startActivity(intent)
+
+
                 println("acaodoroque" + resultado)
             }
         }
