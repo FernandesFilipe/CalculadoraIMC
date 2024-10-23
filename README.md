@@ -5,7 +5,7 @@
 <!-- You can add more screenshots here if you like -->
   <img src="https://github.com/user-attachments/assets/f3d7ce6c-f319-47d0-ad71-9fbf12ffc8b4" width= 260/>  <img src="https://github.com/user-attachments/assets/4acc4a63-3637-4be0-868c-783967595208" width= 260/>
 
-## Tecnologias
+# Tecnologias
 -Activity
 -Intent
 -Snackbar
